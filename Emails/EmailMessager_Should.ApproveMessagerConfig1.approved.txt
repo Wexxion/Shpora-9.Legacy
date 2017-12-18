@@ -1,0 +1,252 @@
+﻿[Vladimir Putin,Cheque,1] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 1,5%.
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Cheque,2] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 3,0%.
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Cheque,10] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 15,0%.
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Cheque,100] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 150,0%.
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Cheque,150] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 225,0%.
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Cheque,-100] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to -150,0%.
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Credit,1] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 1,5%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Credit,2] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 3,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Credit,10] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 15,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Credit,100] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 150,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Credit,150] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 225,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Credit,-100] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now -150,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Savings,1] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 1,5%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Savings,2] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 3,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Savings,10] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 15,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Savings,100] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 150,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Savings,150] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 225,0%
+
+
+Kind regards - your bank.
+
+}
+[Vladimir Putin,Savings,-100] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Vladimir Putin
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to -150,0%
+
+
+Kind regards - your bank.
+
+}

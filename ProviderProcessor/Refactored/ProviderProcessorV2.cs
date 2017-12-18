@@ -6,15 +6,17 @@ using ProviderProcessing.ProcessReports;
 using ProviderProcessing.ProviderDatas;
 using ProviderProcessing.References;
 
-namespace ProviderProcessing
+namespace ProviderProcessing.Refactored
 {
-    public class ProviderProcessor
+    public class ProviderProcessorV2
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(ProviderProcessor));
+        private readonly ProductValidator validator;
+        private static readonly ILog log = LogManager.GetLogger(typeof(ProviderProcessorV2));
         private readonly ProviderRepository repo;
 
-        public ProviderProcessor()
+        public ProviderProcessorV2(ProductValidator validator)
         {
+            this.validator = validator;
             repo = new ProviderRepository();
         }
 
@@ -28,9 +30,7 @@ namespace ProviderProcessing
                     data.ProviderId, data.Timestamp, existingData.Timestamp);
                 return new ProcessReport(false, "Outdated data");
             }
-            var errors = ValidateNames(data.Products)
-                .Concat(data.Products.SelectMany(ValidatePricesAndMeasureUnitCodes))
-                .ToArray();
+            var errors = data.Products.SelectMany(x => validator.ValidateProduct(x)).ToArray();
             if (errors.Any())
                 return new ProcessReport(false, "Product validation errors", errors);
 

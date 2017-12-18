@@ -11,14 +11,14 @@ using StatePrinting;
 namespace Samples
 {
 	[TestFixture]
-	public class ApprovalsDemo
+	[UseReporter(typeof(DiffReporter))]
+    public class ApprovalsDemo
 	{
 		[Test]
 		public void Puzzle15_InitialState()
 		{
 			var puzzle15 = new Puzzle15();
-			// TODO: assert
-			// HINT: Approvals.Verify
+		    Approvals.Verify(puzzle15);
 		}
 
 		#region Как это работает
@@ -29,11 +29,14 @@ namespace Samples
 		#endregion
 
 		[Test]
-		public void Puzzle15_MoveRight()
+		
+        public void Puzzle15_MoveRight()
 		{
 			var puzzle15 = new Puzzle15();
+		    var str = puzzle15 + "\n\r\n\r";
 			puzzle15.MoveRight();
-			// TODO: assert
+		    str += puzzle15;
+            Approvals.Verify(str);
 		}
 
 		[Test]
@@ -46,9 +49,10 @@ namespace Samples
 				Price = 3.14m,
 				UnitsCode = "112"
 			};
-			//TODO: Verify product
-			//TODO: Exclude TemporaryData
-			//HINT: stateprinter.Configuration.Project.Exclude
+		    var sp = new Stateprinter();
+		    sp.Configuration.Project.Exclude<Product>(x => x.TemporaryData);
+
+            Approvals.Verify(sp.PrintObject(product));
 		}
 
 		[Test]
@@ -64,8 +68,7 @@ namespace Samples
 			};
 			string serialized = JsonConvert.SerializeObject(original);
 			Product deserialized = JsonConvert.DeserializeObject<Product>(serialized);
-			//TODO: Проверить, что сериализуется корректно!
-			//HINT: ShouldBeEquivaletTo с опциями в FluentAssertions
+			original.ShouldBeEquivalentTo(deserialized, x => x.Excluding(y => y.TemporaryData));
 		}
 	}
 

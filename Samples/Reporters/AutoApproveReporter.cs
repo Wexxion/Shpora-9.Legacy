@@ -24,7 +24,7 @@ namespace Samples.Reporters
 		{
 			this.approved = approved;
 			this.received = received;
-			Trace.WriteLine(string.Format(@"Will auto-copy ""{0}"" to ""{1}""", received, approved));
+			Trace.WriteLine($@"Will auto-copy ""{received}"" to ""{approved}""");
 		}
 
 		public bool ApprovedWhenReported()
